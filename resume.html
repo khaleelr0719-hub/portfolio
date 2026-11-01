@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>My Resume</h1>
+        <p>Academic and Professional Profile</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="biodata.html">Bio-data</a>
+    </nav>
+
+    <main class="container">
+        <button class="theme-button" onclick="toggleDarkMode()">Dark Mode</button>
+
+        <section class="card">
+            <h2>KHALEEL REHMAN</h2>
+            <p><strong>Email:</strong>khaleelr0719@gmail.com</p>
+            <p><strong>Phone:</strong> +91 6360158269</p>
+            <hr>
+
+            <h3>Career Objective</h3>
+            <p>
+                To obtain an opportunity where I can apply my technical
+                knowledge, improve my skills and contribute to organizational growth.
+            </p>
+
+            <h3>Educational Qualification</h3>
+            <div class="table-wrap">
+                <table>
+                    <tr><th>Course</th><th>Institution</th><th>Year</th></tr>
+                    <tr><td>B.E. Computer Science</td><td>KLE INSTITUTE OF TECHNOLOGY</td><td>2027</td></tr>
+                    <tr><td>Diploma</td><td>TSIT</td><td>2025</td></tr>
+                </table>
+            </div>
+
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML and CSS</li>
+                <li>JavaScript</li>
+                <li>C Programming</li>
+                <li>Python Basics</li>
+            </ul>
+
+            <h3>Personal Strengths</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+                <li>Willingness to Learn</li>
+            </ul>
+
+            <h3>Declaration</h3>
+            <p>I hereby declare that the information provided above is true to the best of my knowledge.</p>
+            <p><strong>Place:</strong>HUBLI</p>
+            <p><strong>Date:</strong> <span id="today-date"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> My Personal Website</p>
+    </footer>
+
+    <button class="top-button" onclick="scrollToTop()" title="Go to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

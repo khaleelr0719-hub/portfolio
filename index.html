@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>My Personal Portfolio</h1>
+        <p>Resume and Bio-data Website</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="biodata.html">Bio-data</a>
+    </nav>
+
+    <main class="container">
+        <button class="theme-button" onclick="toggleDarkMode()">Dark Mode</button>
+
+        <section class="card home-card">
+            <img class="profile-photo" src="images-profile.jpg"
+                 alt="Profile photo"
+                 onerror="this.style.display='none'; document.getElementById('photo-fallback').style.display='flex';">
+            <div id="photo-fallback" class="photo-fallback">YOUR PHOTO</div>
+
+            <h2>KHALEEL REHMAN</h2>
+            <h3>Computer Science Engineering Student</h3>
+            <p class="intro">
+                Hello! I am an engineering student interested in technology,
+                programming and innovation. I enjoy learning new skills and
+                developing creative solutions.
+            </p>
+
+            <div class="home-buttons">
+                <a class="main-button" href="resume.html">View Resume</a>
+                <a class="main-button" href="biodata.html">View Bio-data</a>
+            </div>
+
+            <hr>
+            <h3>Current Date and Time</h3>
+            <p id="date-time" class="date-time"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> My Personal Website</p>
+    </footer>
+
+    <button class="top-button" onclick="scrollToTop()" title="Go to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
